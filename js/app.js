@@ -72,48 +72,6 @@
 
 // showMyDb(personalMuvieDb.privat);
 
+///--------------------------------------------------
 
 
-// function first() {
-//   setTimeout(function () {
-//     console.log('first');
-//   }, 1000);
-// }
-// function second() {
-//   console.log('second');
-// }
-// first();
-// second();
-
-// function lern(lang, callback) {
-//   console.log(lang);
-//   callback();
-// }
-
-// lern('js', function () {
-//   console.log('eeee');
-// });
-
-const options = {
-  name: 'test',
-  width: 1024,
-  height: 1024,
-  colors: {
-    border: 'black',
-    bg: 'red'
-  }
-};
-
-console.log(Object.keys(options).length); // Проверяеь количество в объекте
-
-const { border, bg } = options.colors; // деструктуризация объектов
-console.log(border);
-
-for (let key in options) {
-  if (typeof (options[key]) === 'object') {
-    for (let i in options[key]) {
-      console.log(`Свойство '${i}' имеет значение '${options[key][i]}'`);
-    }
-  }
-  console.log(`Свойство '${key}' имеет значение '${options[key]}'`);
-}
